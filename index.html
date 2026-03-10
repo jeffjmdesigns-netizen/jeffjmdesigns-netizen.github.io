@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Philosophia Scripts — Transforming Complex Ideas into Compelling Stories</title>
+    <meta name="description"
+        content="Philosophia Scripts bridges abstract academic thought with mainstream storytelling through specialized scripts for film, TV, and theater." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpolygon points='18,2 34,34 2,34' fill='%23E85C49'/%3E%3C/svg%3E" />
+</head>
+
+<body>
+
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__inner">
+            <a href="#" class="navbar__logo" aria-label="Philosophia Scripts — Home">
+                <img id="navbarLogo" src="imagery/primary-logo-reversed.png" alt="Philosophia Scripts"
+                    class="navbar__logo-img">
+            </a>
+
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ======== ABOUT — "THE THRESHOLD" ======== -->
+    <section class="hero" id="about">
+        <!-- Cinematic Background Image -->
+        <video autoplay muted loop playsinline class="hero__bg">
+            <source src="TV-philosopher-B.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+
+        <!-- Background Grid -->
+        <div class="hero__grid"></div>
+
+        <!-- Decorative Columns (Greek/Futuristic) -->
+        <div class="hero__column hero__column--left"></div>
+        <div class="hero__column hero__column--right"></div>
+
+        <!-- Portal Rings -->
+        <div class="hero__portal">
+            <div class="portal-ring portal-ring--1"></div>
+            <div class="portal-ring portal-ring--2"></div>
+            <div class="portal-ring portal-ring--3"></div>
+            <div class="portal-ring portal-ring--4"></div>
+        </div>
+
+
+
+        <!-- Content -->
+        <div class="hero__content">
+            <span class="hero__tagline">Philosophia Scripts is</span>
+            <h1 class="hero__title">
+                Connecting philosophical thought to film
+            </h1>
+            <p class="hero__subtitle">
+                We bridge the gap between abstract academic thought and mainstream storytelling — crafting scripts that
+                are timeless, thought-provoking, and undeniably modern.
+            </p>
+
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero__scroll">
+            <div class="hero__scroll-mouse">
+                <div class="hero__scroll-dot"></div>
+            </div>
+            <span class="hero__scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ======== PROJECTS LIBRARY ======== -->
+    <section class="scripts" id="projects">
+        <div class="container">
+            <div class="scripts__header reveal">
+                <span class="scripts__label">Projects</span>
+                <h2 class="scripts__title">Narratives That Challenge & Inspire</h2>
+                <p class="scripts__subtitle">
+                    Specialized script projects for film, television, and theater — each exploring the depths of human
+                    thought.
+                </p>
+            </div>
+
+            <div class="scripts__grid">
+                <!-- Card 1: Film -->
+                <article class="script-card" data-delay="0">
+                    <div class="script-card__icon script-card__icon--film">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="2" />
+                            <path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 7h5M17 17h5" />
+                        </svg>
+                    </div>
+                    <span class="script-card__category">Film</span>
+                    <h3 class="script-card__title">The Dialectic</h3>
+                    <p class="script-card__desc">
+                        A reclusive philosopher is drawn into a public debate that forces her to confront the limits of
+                        reason — and the power of narrative.
+                    </p>
+                    <div class="script-card__tags">
+                        <span class="script-card__tag">Drama</span>
+                        <span class="script-card__tag">Intellectual Thriller</span>
+                        <span class="script-card__tag">Feature</span>
+                    </div>
+                </article>
+
+                <!-- Card 2: Television -->
+                <article class="script-card" data-delay="150">
+                    <div class="script-card__icon script-card__icon--tv">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </div>
+                    <span class="script-card__category">Television</span>
+                    <h3 class="script-card__title">Agora</h3>
+                    <p class="script-card__desc">
+                        An anthology series where each episode reimagines a pivotal moment in the history of ideas —
+                        from the Library of Alexandria to Silicon Valley.
+                    </p>
+                    <div class="script-card__tags">
+                        <span class="script-card__tag">Anthology</span>
+                        <span class="script-card__tag">Historical Fiction</span>
+                        <span class="script-card__tag">Series</span>
+                    </div>
+                </article>
+
+                <!-- Card 3: Theater -->
+                <article class="script-card" data-delay="300">
+                    <div class="script-card__icon script-card__icon--theater">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                            <path d="M8 9.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM16 9.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            <path d="M9 15c.83.95 1.84 1.5 3 1.5s2.17-.55 3-1.5" />
+                        </svg>
+                    </div>
+                    <span class="script-card__category">Theater</span>
+                    <h3 class="script-card__title">The Allegory</h3>
+                    <p class="script-card__desc">
+                        A two-act stage play re-envisioning Plato's Cave for the age of surveillance — where the shadows
+                        on the wall are algorithmic.
+                    </p>
+                    <div class="script-card__tags">
+                        <span class="script-card__tag">Stage Play</span>
+                        <span class="script-card__tag">Philosophical</span>
+                        <span class="script-card__tag">Two Acts</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== THE PROVOCATEUR ======== -->
+    <section class="provocateur" id="provocateur">
+        <div class="provocateur__pattern"></div>
+        <div class="provocateur__glow"></div>
+
+        <div class="provocateur__content reveal">
+            <div class="provocateur__symbol">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                    <circle cx="12" cy="17" r="0.5" fill="currentColor" />
+                </svg>
+            </div>
+            <h2 class="provocateur__question">
+                If every story is a mirror, what truth are you avoiding in your own reflection?
+            </h2>
+            <p class="provocateur__answer">
+                At Philosophia Scripts, we don't write comfortable narratives. We write the ones that sit with you long
+                after the curtain falls — the ones that make you question the stories you tell yourself.
+            </p>
+            <div class="provocateur__line"></div>
+        </div>
+    </section>
+
+    <!-- ======== CONTACT SECTION ======== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="contact-section__title">Contact</h2>
+
+            <div class="contact-grid">
+                <!-- Left: Message Form -->
+                <div class="contact-form-wrapper">
+                    <div class="contact-card contact-card--form">
+                        <textarea class="contact-textarea" placeholder="type your message here"
+                            aria-label="Message"></textarea>
+                        <button class="contact-btn">Send</button>
+                    </div>
+                    <p class="contact-alt">
+                        As an additional option, you can send a direct email to
+                        <a href="mailto:info@philosophiascripts.com">info@philosophiascripts.com</a>
+                    </p>
+                </div>
+
+                <!-- Right: Calendly Embed Mockup/Embed -->
+                <div class="contact-calendly-wrapper">
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/philosophiascripts/30min"
+                        style="min-width:320px;height:630px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                        async></script>
+                    <!-- Calendly inline widget end -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__copy">
+                    &copy; 2026 <span>Philosophia Scripts</span>. All rights reserved.
+                </p>
+                <ul class="footer__links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
