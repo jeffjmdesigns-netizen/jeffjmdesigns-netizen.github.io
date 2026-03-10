@@ -17,10 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Navbar effect
         if (scrollY > 60) {
             navbar.classList.add('scrolled');
-            if (navbarLogo) navbarLogo.src = 'imagery/primary-logo.png';
         } else {
             navbar.classList.remove('scrolled');
-            if (navbarLogo) navbarLogo.src = 'imagery/primary-logo-reversed.png';
         }
 
         // Portal rings scroll drama
@@ -100,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const id = entry.target.getAttribute('id');
-                    
+
                     navItems.forEach(link => {
                         link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
                     });
@@ -115,6 +113,36 @@ document.addEventListener('DOMContentLoaded', () => {
         if (section) scrollSpyObserver.observe(section);
     });
 
+
+    // ---- Hero Particle Animation ----
+    const particleContainer = document.getElementById('heroParticles');
+    if (particleContainer) {
+        const createParticle = (index) => {
+            const p = document.createElement('div');
+            p.className = 'particle';
+
+            // Random properties for a natural look
+            const radius = 100 + Math.random() * 350; // Distance from center
+            const size = 2 + Math.random() * 4; // Larger particles
+            const duration = 20 + Math.random() * 30; // Slower for more noticeability
+            const delay = Math.random() * -duration;
+            const opacity = 0.2 + Math.random() * 0.2; // 50% more transparent (half opacity)
+            const direction = index % 2 === 0 ? 'revolveCW' : 'revolveCCW';
+
+            p.style.setProperty('--radius', `${radius}px`);
+            p.style.setProperty('--max-opacity', opacity);
+            p.style.width = `${size}px`;
+            p.style.height = `${size}px`;
+            p.style.animation = `${direction} ${duration}s linear ${delay}s infinite`;
+
+            particleContainer.appendChild(p);
+        };
+
+        // Create 40 subtle particles
+        for (let i = 0; i < 40; i++) {
+            createParticle(i);
+        }
+    }
 
     // ---- Smooth scroll for anchor links ----
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

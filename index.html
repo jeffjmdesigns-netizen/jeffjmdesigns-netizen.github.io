@@ -18,8 +18,9 @@
     <nav class="navbar" id="navbar">
         <div class="navbar__inner">
             <a href="#" class="navbar__logo" aria-label="Philosophia Scripts — Home">
-                <img id="navbarLogo" src="imagery/primary-logo-reversed.png" alt="Philosophia Scripts"
-                    class="navbar__logo-img">
+                <img src="imagery/primary-logo-reversed.png" alt="Philosophia Scripts"
+                    class="navbar__logo-img logo--reversed">
+                <img src="imagery/primary-logo.png" alt="Philosophia Scripts" class="navbar__logo-img logo--primary">
             </a>
 
             <ul class="navbar__links" id="navLinks">
@@ -39,7 +40,7 @@
     <!-- ======== ABOUT — "THE THRESHOLD" ======== -->
     <section class="hero" id="about">
         <!-- Cinematic Background Image -->
-        <video autoplay muted loop playsinline class="hero__bg">
+        <video autoplay muted loop playsinline poster="imagery/retro-tv-true-philosopher-default.jpg" class="hero__bg">
             <source src="TV-philosopher-B.mp4" type="video/mp4">
         </video>
         <div class="hero__overlay"></div>
@@ -63,6 +64,7 @@
 
         <!-- Content -->
         <div class="hero__content">
+            <div class="hero__particles" id="heroParticles"></div>
             <span class="hero__tagline">Philosophia Scripts is</span>
             <h1 class="hero__title">
                 Connecting philosophical thought to film
